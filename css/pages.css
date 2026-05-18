@@ -1,0 +1,366 @@
+/* ── Shared page shell ─────────────────────────── */
+.page-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-family: var(--font);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  letter-spacing: -.02em;
+}
+
+.page-subtitle {
+  font-family: var(--font);
+  color: var(--muted);
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.page-note {
+  margin-top: 2rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-family: var(--font);
+}
+
+/* Section sub-headings (courses, research interests) */
+.section-heading {
+  font-family: var(--font);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 2rem 0 1rem;
+  color: var(--text);
+}
+
+/* ── Toggle sections (Notion-style) ────────────── */
+.toggle-section {
+  margin-bottom: 0rem;
+}
+
+.toggle-heading {
+  background: none;
+  border: none;
+  padding: 0.75rem 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  text-align: left;
+  transition: background-color 0.2s;
+  border-radius: 4px;
+}
+
+.toggle-heading:hover {
+  background-color: var(--border, rgba(0, 0, 0, 0.05));
+}
+
+.toggle-chevron {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  transition: transform 0.2s ease;
+  color: var(--muted);
+  flex-shrink: 0;
+}
+
+.toggle-content {
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  max-height: 100vh;
+  overflow: hidden;
+  transition: max-height 0.2s ease, margin-bottom 0.2s ease;
+}
+
+/* ── Courses ───────────────────────────────────── */
+.course-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.course-list li {
+  border-left: 3px solid var(--accent);
+  padding-left: 1rem;
+}
+
+.square-list {
+  list-style-type: square;
+  list-style-position: outside;
+  padding-left: 1.4rem;
+  margin-top: 1rem;
+  display: block;
+}
+
+.square-list li {
+  margin-bottom: 0.6rem;
+}
+
+.course-title {
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 1rem;
+  display: block;
+}
+
+.course-meta {
+  font-family: var(--font);
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-top: 0.2rem;
+}
+
+/* ── Publications ──────────────────────────────── */
+.pub-item {
+  margin-bottom: 1.8rem;
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid var(--border);
+}
+.pub-item:last-of-type {
+  border-bottom: none;
+}
+
+.pub-title {
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.pub-authors {
+  font-family: var(--font);
+  font-style: italic;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.pub-venue {
+  font-family: var(--font);
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-top: 0.15rem;
+}
+
+.pub-links {
+  margin-top: 0.4rem;
+}
+.pub-links a {
+  font-family: var(--font);
+  font-size: 0.82rem;
+  margin-right: 1rem;
+}
+
+/* ── Research ──────────────────────────────────── */
+.research-item {
+  margin-bottom: 2rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid var(--border);
+}
+.research-item:last-of-type {
+  border-bottom: none;
+}
+
+.research-title {
+  font-family: var(--font);
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.research-date {
+  font-family: var(--font);
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.research-meta {
+  font-family: var(--font);
+  font-size: 0.88rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.interest-list {
+  list-style: square;
+  padding-left: 1.5rem;
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-family: var(--font);
+  font-size: 0.95rem;
+}
+
+/* ── CV ────────────────────────────────────────── */
+
+/* Header row: "cv" title + PDF link */
+.cv-header {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.cv-pdf-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: var(--font);
+  font-size: 0.82rem;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 0.2rem 0.7rem;
+  transition: background .15s, color .15s;
+  text-decoration: none;
+}
+.cv-pdf-link:hover {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+/* Section block */
+.cv-section {
+  margin-bottom: 2.5rem;
+}
+
+.cv-section-title {
+  font-family: var(--font);
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: lowercase;
+  letter-spacing: .04em;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.2rem;
+}
+
+/* Basics table */
+.cv-table {
+  border-collapse: collapse;
+  font-family: var(--font);
+  font-size: 0.92rem;
+  width: 100%;
+  max-width: 480px;
+}
+.cv-table th,
+.cv-table td {
+  padding: 0.3rem 0.75rem 0.3rem 0;
+  text-align: left;
+  vertical-align: top;
+  border: none;
+}
+.cv-table th {
+  font-weight: 700;
+  color: var(--text);
+  width: 120px;
+  white-space: nowrap;
+}
+.cv-table td {
+  color: var(--muted);
+}
+
+/* CV entries (education, awards) */
+.cv-entry {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 1.2rem;
+  margin-bottom: 1.4rem;
+}
+
+.cv-entry-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding-top: 0.1rem;
+}
+
+.cv-entry-date {
+  font-family: var(--font);
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.cv-entry-location {
+  font-family: var(--font);
+  font-size: 0.78rem;
+  color: var(--muted);
+  opacity: 0.75;
+}
+
+.cv-entry-degree {
+  font-family: var(--font);
+  font-size: 0.92rem;
+  font-weight: 700;
+  margin: 0 0 0.2rem;
+}
+.cv-entry-degree a {
+  color: var(--text);
+}
+.cv-entry-degree a:hover {
+  color: var(--accent);
+}
+
+.cv-entry-org {
+  font-family: var(--font);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.cv-entry-field {
+  font-family: var(--font);
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.15rem;
+}
+
+.cv-entry-courses {
+  list-style: disc;
+  padding-left: 1.1rem;
+  margin-top: 0.4rem;
+  font-family: var(--font);
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+/* Responsive – stack cv-entry on narrow screens */
+@media (max-width: 560px) {
+  .cv-entry {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+  }
+  .cv-entry-aside {
+    flex-direction: row;
+    gap: 0.6rem;
+  }
+  .research-title {
+    flex-direction: column;
+  }
+}
+
+/* ── CV skills table (wider than basics table) ── */
+.cv-skills-table {
+  max-width: 100%;
+}
+.cv-skills-table th {
+  width: 110px;
+  vertical-align: top;
+  padding-top: 0.35rem;
+}
+.cv-skills-table td {
+  line-height: 1.6;
+}

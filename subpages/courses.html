@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Courses taught and taken by Tien Tran." />
+  <title>Courses</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+</head>
+<body>
+
+  <nav id="navbar">
+    <a href="../index.html" class="nav-brand">Tien Tran</a>
+    <div class="nav-toggle" onclick="toggleNav()" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="courses.html" class="active">Courses</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li>
+        <a href="#" class="dropdown-toggle">more</a>
+        <ul class="dropdown-menu">
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/menu/">Menu</a></li>
+          <li><a href="/others/">Others</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div class="nav-search" title="Search (ctrl+k)">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <span>ctrl k</span>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-container">
+
+      <h1>Courses &amp; Teaching</h1>
+      <p class="page-subtitle">Courses I've taken and worked as a TA in.</p>
+
+      <div class="toggle-section">
+        <button class="toggle-heading" onclick="toggleSection(this)">
+          <span class="toggle-chevron">▶</span>
+          <h2 class="section-heading" style="display: inline; margin: 0;">Graduate Courses</h2>
+        </button>
+        <div class="toggle-content" style="display: none;">
+          <ul class="course-list">
+            <li>
+              <span class="course-title">MTH 534 - Measure Theory</span>
+              <div class="course-meta">Aug 2026 · University at Buffalo</div>
+            </li>
+            <li>
+              <span class="course-title">MTH 537 - Intro Numeric Analysis 1</span>
+              <div class="course-meta">Aug 2025, Aug 2026 · University at Buffalo</div>
+            </li>
+            <li>
+              <span class="course-title">MTH 539 - Method of Applied Math 1</span>
+              <div class="course-meta">Aug 2025, Aug 2026 · University at Buffalo</div>
+            </li>
+            <li>
+              <span class="course-title">CSE 574 - Intro Machine Learning</span>
+              <div class="course-meta">Aug 2025 · University at Buffalo</div>
+            </li>
+            <li>
+              <span class="course-title">MTH 448/548 - Data-oriented Computing </span>
+              <div class="course-meta">Jan 2025 · University at Buffalo</div>
+            </li>
+            <li>
+              <span class="course-title">MTH 418/518 - Survey of Partial Differential Equations </span>
+              <div class="course-meta">Jan 2025 · University at Buffalo</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="toggle-section">
+        <button class="toggle-heading" onclick="toggleSection(this)">
+          <span class="toggle-chevron">▶</span>
+          <h2 class="section-heading" style="display: inline; margin: 0;">Teaching Assistantships</h2>
+        </button>
+        <div class="toggle-content" style="display: none;">
+          <ul class="course-list">
+            <li>
+              <span class="course-title">CSE 331 - Algorithms and Complexity</span>
+              <div class="course-meta">Jan 2025, June 2025, Aug 2025, Jan 2026 · University at Buffalo</div>
+            </li>
+            <li>
+              <span class="course-title">CSE 241 - Digital Systems</span>
+              <div class="course-meta">Jan 2025 · University at Buffalo</div>
+            </li>
+            <li>
+              <span class="course-title">CSE 341 - Computer Organization</span>
+              <div class="course-meta">May 2024 · University at Buffalo</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    &copy; Copyright <span id="yr"></span> Tien Tran.
+    Powered by <a href="https://pages.github.com/" target="_blank" rel="noreferrer">GitHub Pages</a>.
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

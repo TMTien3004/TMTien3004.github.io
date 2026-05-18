@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Research</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+  <style>
+    .research-item { margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border, #e2e0db); }
+    .research-item:last-child { border-bottom: none; }
+    .research-title { font-size: 1.2rem; font-weight: 600; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 1rem; }
+    .research-date { font-family: var(--mono); font-size: 0.8rem; color: var(--muted); }
+    .research-meta { font-size: 0.85rem; color: var(--accent); margin: 0.25rem 0 0.5rem; }
+    .research-item p { margin: 0; line-height: 1.6; }
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+    <a href="../index.html" class="nav-brand">Tien Tran</a>
+    <div class="nav-toggle" onclick="toggleNav()"><span></span><span></span><span></span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="research.html" class="active">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li>
+        <a href="#" class="dropdown-toggle">more</a>
+        <ul class="dropdown-menu">
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/menu/">Menu</a></li>
+          <li><a href="/others/">Others</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div class="nav-search" title="Search (ctrl+k)">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+        <circle cx="11" cy="11" r="8"/>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <span>ctrl k</span>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-container">
+      <section>
+        <h1>Research Interests</h1>
+        <ul class="square-list">
+          <li>Numerical Analysis (Numerical PDEs, Numerical Linear Algebra)</li>
+          <li>Physics-Informed Neural Networks (PINNs)</li>
+          <li>Scientific Machine Learning</li>
+        </ul>
+      </section>
+
+      <section>
+        <h1 style="margin-top: 2rem; margin-bottom: 1rem">Research Projects</h1>
+
+        <div class="research-item">
+          <div class="research-title">Numerical data-driven analysis of Lorenz 96 model <span class="research-date">Present</span></div>
+          <div class="research-meta">with <a href="https://sites.google.com/view/daozhi-han/home" target="_blank" rel="noreferrer">Dr. Daozhi Han</a> · University at Buffalo</div>
+          <p>Work in progress...</p>
+        </div>
+
+        <div class="research-item">
+          <div class="research-title">Shallow Neural Networks vs. Finite Element Methods <span class="research-date">May 2026</span></div>
+          <div class="research-meta">with <a href="https://www.linkedin.com/in/sayantan-sarkar-s117/" target="_blank" rel="noreferrer">Sayantan Sarkar</a> · Directed Reading Program (DRP)</div>
+          <p>Read research papers and analyze error behavior for the Finite Element Method (FEM) and Shallow Neural Networks (SNNs) in solving the heat equation.</p>
+        </div>
+
+        <div class="research-item">
+          <div class="research-title">Finite Element Methods for Differential Equations <span class="research-date">Dec 2025</span></div>
+          <div class="research-meta">with <a href="https://www.linkedin.com/in/sayantan-sarkar-s117/" target="_blank" rel="noreferrer">Sayantan Sarkar</a> · Directed Reading Program (DRP)</div>
+          <ul class="square-list">
+            <li>Studied the mathematical theory of the Finite Element Method (FEM) for the numerical solution of partial differential equations.</li>
+            <li>Derived weak formulations and implemented computational solvers using the FEniCSx/DOLFINx framework to model Poisson, heat, and hyperelastic equations.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>&copy; Copyright <span id="yr"></span> Tien Tran. Powered by GitHub Pages.</footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

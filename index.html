@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Tien Tran – Applied Mathematics PhD student at University at Buffalo." />
+  <title>Tien Tran</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- external CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── Navbar ── -->
+  <nav id="navbar">
+    <a href="/" class="nav-brand">Tien Tran</a>
+
+    <!-- Hamburger (mobile) -->
+    <div class="nav-toggle" onclick="toggleNav()" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/" class="active">Home</a></li>
+      <li><a href="/subpages/courses.html">Courses</a></li>
+      <li><a href="/subpages/research.html">Research</a></li>
+      <li><a href="/subpages/publications.html">Publications</a></li>
+      <li><a href="/subpages/cv.html">CV</a></li>
+      <li>
+        <a href="#" class="dropdown-toggle">More</a>
+        <ul class="dropdown-menu">
+          <li><a href="/subpages/blog.html">Blog</a></li>
+          <li><a href="/subpages/menu.html">Menu</a></li>
+          <li><a href="/subpages/others.html">Others</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="nav-search" title="Search (ctrl+k)">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+        <circle cx="11" cy="11" r="8"/>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <span>ctrl k</span>
+    </div>
+  </nav>
+
+  <!-- ── Main content ── -->
+  <main>
+    <div class="profile-grid">
+
+      <!-- Left: personal info -->
+      <div class="profile-info">
+        <h1>Tien Tran</h1>
+
+        <div class="profile-meta">
+          1st Year (Applied) Mathematics Ph.D. Student, 
+          <a href="https://www.buffalo.edu/cas/math.html" target="_blank" rel="noreferrer">University at Buffalo (UB)</a>.
+        </div>
+
+        <div class="bio">
+          <p>Welcome to my minimalistic world! I am a first-year PhD student in Applied Mathematics at UB, 
+          having received two degrees from the same institution: a B.A. in Computing & Applied Mathematics 
+          and a B.S. in Computer Science.</p>
+
+          <p><strong>Research interests:</strong></p>
+          <ul class="square-list">
+            <li>Numerical Analysis (Numerical PDEs & Numerical Linear Algebra)</li>
+            <li>Physics-Informed Neural Networks (PINNs)</li>
+          </ul>
+        </div>
+
+        <!-- Social / contact links -->
+        <div class="social-row">
+          <a href="mailto:tientran@buffalo.edu">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <polyline points="2,4 12,13 22,4"/>
+            </svg>
+            Email
+          </a>
+          <a href="https://github.com/TMTien3004" target="_blank" rel="noreferrer">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 .3C5.37.3 0 5.67 0 12.3c0 5.3 3.44 9.8 8.2 11.4.6.1.83-.26.83-.57v-2c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.08-.74.08-.72.08-.72 
+              1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.3.47-2.38 1.24-3.22-.14-.3-.54-1.52.11-3.17 0 0 1-.32 3.3 
+              1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.65 1.65.25 2.87.12 3.17.77.84 1.23 1.92 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.82 
+              1.1.82 2.22v3.29c0 .32.22.69.83.57C20.56 22.1 24 17.6 24 12.3 24 5.67 18.63.3 12 .3z"/>
+            </svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/tmtien3004/" target="_blank" rel="noreferrer">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8.5h5V24H0V8.5zm7.5 0H12v2.15h.07C12.72 9.33 14.08 8 16.17 8 20.52 8 21 
+              10.87 21 14.62V24h-5v-8.4c0-2-.04-4.57-2.79-4.57-2.79 0-3.22 2.18-3.22 4.43V24h-5V8.5z"/>
+            </svg>
+            LinkedIn
+          </a>
+          <a href="docs/CV___May_2026.pdf" target="_blank" rel="noreferrer">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+            </svg>
+            CV
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: photo (enlarged, using your local image) -->
+      <div class="profile-photo-wrap">
+        <img class="profile-photo" src="images/Portrait.jpg" alt="Tien Tran - portrait" />
+        <div class="photo-caption">Me visiting MIT</div>
+      </div>
+
+    </div><!-- /.profile-grid -->
+
+    <hr class="section-divider" />
+
+    <!-- News section -->
+    <h2 class="news-heading">News</h2>
+    <ul class="news-list">
+      <li>
+        <span class="news-date">May 2026</span>
+        <span>Graduated with two degrees: B.A. Computing & Applied Mathematics and B.S. Computer Science. <br />
+          Finished DRP topic: <em>"A Comparative Analysis of Shallow Neural Networks (SNN) and Finite Element Method (FEM) in Solving PDEs."</em> 
+          with <a href="https://www.linkedin.com/in/sayantan-sarkar-s117/" target="_blank" rel="noreferrer">Sayantan Sarkar</a> </span>
+      </li>
+      <li>
+        <span class="news-date">Dec 2025</span>
+        <span>Finished DRP topic: <em>"Simulation of Differential Equations by Finite Element Methods (FEM)."</em> 
+          with <a href="https://www.linkedin.com/in/sayantan-sarkar-s117/" target="_blank" rel="noreferrer">Sayantan Sarkar</a> </span>
+      </li>
+      <li>
+        <span class="news-date">Jun 2025</span>
+        <span>Started a research project with 
+          <a href="https://sites.google.com/view/daozhi-han/home?authuser=0" target="_blank" rel="noreferrer">Dr. Daozhi Han</a> in analyzing the long-term behavior of 
+          the Lorenz 96 model.</span>
+      </li>
+      <li>
+        <span class="news-date">Jan 2025</span>
+        <span>Started TA work for CSE 331 (Algorithms and Complexity) and CSE 241 (Digital Systems).</span>
+      </li>
+    </ul>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer>
+    &copy; Copyright <span id="yr"></span> Tien Tran.
+    Powered by <a href="https://pages.github.com/" target="_blank" rel="noreferrer">GitHub Pages</a>.
+  </footer>
+</body>
+</html>

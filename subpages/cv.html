@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Curriculum Vitae" />
+  <title>CV</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+</head>
+<body>
+
+  <nav id="navbar">
+    <a href="../index.html" class="nav-brand">Tien Tran</a>
+    <div class="nav-toggle" onclick="toggleNav()" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="cv.html" class="active">CV</a></li>
+      <li>
+        <a href="#" class="dropdown-toggle">more</a>
+        <ul class="dropdown-menu">
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/menu/">Menu</a></li>
+          <li><a href="/others/">Others</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div class="nav-search" title="Search (ctrl+k)">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <span>ctrl k</span>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-container">
+
+      <!-- Page heading + PDF download -->
+      <div class="cv-header">
+        <h1 class="page-title">CV</h1>
+      </div>
+
+      <!-- ── Education ─────────────────────────────── -->
+      <section class="cv-section">
+        <h2 class="cv-section-title">Education</h2>
+
+        <div class="cv-entry">
+          <div class="cv-entry-aside">
+            <span class="cv-entry-date">Aug 2022 - May 2026</span>
+            <span class="cv-entry-location">Buffalo, New York</span>
+          </div>
+          <div class="cv-entry-body">
+            <h3 class="cv-entry-degree">
+              <a href="https://www.buffalo.edu/" target="_blank" rel="noreferrer">B.A. Computing &amp; Applied Mathematics &amp; B.S. Computer Science</a>
+            </h3>
+            <div class="cv-entry-org">University at Buffalo</div>
+            <div class="cv-entry-field">Overall GPA: 3.8</div>
+            <ul class="cv-entry-courses">
+              <li><strong>Graduate:</strong> Intro Numeric Analysis I, Methods of Applied Maths I, Intro to Machine Learning</li>
+              <li><strong>Undergraduate:</strong> Introductory Linear Algebra, Survey of PDEs, Intro to Differential Equations, Data-Oriented Computing for Mathematics, Scientific and Mathematical Computing, Intro to Probability</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Honors & Awards ───────────────────────── -->
+      <section class="cv-section">
+        <h2 class="cv-section-title">Honors &amp; Awards</h2>        
+        <div class="cv-entry">
+          <div class="cv-entry-aside">
+            <span class="cv-entry-date">Fall 2022 - May 2026</span>
+          </div>
+          <div class="cv-entry-body">
+            <h3 class="cv-entry-degree">Dean's List</h3>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-aside">
+            <span class="cv-entry-date">Spring 2025</span>
+          </div>
+          <div class="cv-entry-body">
+            <h3 class="cv-entry-degree">Member of Phi Beta Kappa Honor Society</h3>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-aside">
+            <span class="cv-entry-date">$4,250</span>
+          </div>
+          <div class="cv-entry-body">
+            <h3 class="cv-entry-degree">Woeppel Research Initiative in Mathematics Scholarship</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Research Experience ───────────────────── -->
+      <section class="cv-section">
+        <h2 class="cv-section-title">Research Experience</h2>
+
+        <div class="cv-entry">
+          <div class="cv-entry-aside">
+            <span class="cv-entry-date">Jun 2025 - Dec 2025</span>
+            <span class="cv-entry-location">Buffalo, New York</span>
+          </div>
+          <div class="cv-entry-body">
+            <h3 class="cv-entry-degree">Undergraduate Researcher</h3>
+            <div class="cv-entry-org">Dept. of Mathematics, University at Buffalo</div>
+            <div class="cv-entry-field">Advisor: Prof. Daozhi Han</div>
+            <ul class="cv-entry-courses">
+              <li>Programmed numerical algorithms to simulate and analyze the long-term behavior of nonlinear dynamical systems.</li>
+              <li>Investigated the difference between high-order and low-order methods in capturing chaotic statistical properties (mean, variance, statistical Cauchy difference).</li>
+              <li>Designed a modular simulation framework for large-scale numerical solutions of the Lorenz 96 model using Runge-Kutta and forward Euler methods.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-aside">
+            <span class="cv-entry-date">Sept 2025 - Dec 2025</span>
+            <span class="cv-entry-location">Buffalo, New York</span>
+          </div>
+          <div class="cv-entry-body">
+            <h3 class="cv-entry-degree">Directed Reading Program</h3>
+            <div class="cv-entry-org">Dept. of Mathematics, University at Buffalo</div>
+            <div class="cv-entry-field">Advisor: PhD Candidate Sayantan Sarkar</div>
+            <ul class="cv-entry-courses">
+              <li>Studied the mathematical theory of the Finite Element Method (FEM) for numerical solution of PDEs.</li>
+              <li>Derived weak formulations and implemented computational solvers using the FEniCSx/DOLFINx framework to model Poisson, heat, and hyperelastic equations.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-aside">
+            <span class="cv-entry-date">Jun 2025 - Aug 2025</span>
+          </div>
+          <div class="cv-entry-body">
+            <h3 class="cv-entry-degree">Undergraduate Researcher - Polymath Jr. Program</h3>
+            <div class="cv-entry-field">Advisor: Prof. Sean Howe</div>
+            <ul class="cv-entry-courses">
+              <li>Utilized SageMath to computationally evaluate σ-moment generating functions for cyclic, dihedral, and generalized symmetric groups.</li>
+              <li>Created a Wiki page on symmetric functions and commutative monoid rings summarizing advanced research.</li>
+              <li>Collaborated with undergraduates to compute Λ-distributions of random matrix groups and presented results at the Polymath Jr. conference.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-aside">
+            <span class="cv-entry-date">Aug 2024 - Dec 2024</span>
+            <span class="cv-entry-location">Buffalo, New York</span>
+          </div>
+          <div class="cv-entry-body">
+            <h3 class="cv-entry-degree">Undergraduate Researcher</h3>
+            <div class="cv-entry-org">Dept. of Computer Science &amp; Engineering, University at Buffalo</div>
+            <div class="cv-entry-field">Advisor: Prof. Roshan Ayyalasomayajula</div>
+            <ul class="cv-entry-courses">
+              <li>Built multiple data retrieval and manipulation tools using PySpark and Pandas.</li>
+              <li>Synchronized filtered data between MQTT and MinIO database for proper data storage and collection.</li>
+              <li>Collaborated with team members to debug the navigation mobile app for compatibility and optimal performance.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-aside">
+            <span class="cv-entry-date">Jan 2024 - May 2024</span>
+            <span class="cv-entry-location">Buffalo, New York</span>
+          </div>
+          <div class="cv-entry-body">
+            <h3 class="cv-entry-degree">Directed Reading Program</h3>
+            <div class="cv-entry-org">Dept. of Mathematics, University at Buffalo</div>
+            <div class="cv-entry-field">Advisor: PhD Student Quoc Nguyen</div>
+            <ul class="cv-entry-courses">
+              <li>Investigated data structures and path-finding algorithms to optimize the Traveling Salesman Problem.</li>
+              <li>Presented cumulative research at a small conference in the Math Department.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Teaching Experience ───────────────────── -->
+      <section class="cv-section">
+        <h2 class="cv-section-title">Teaching Experience</h2>
+
+        <div class="cv-entry">
+          <div class="cv-entry-aside">
+            <span class="cv-entry-date">Jan 2025 - May 2026</span>
+            <span class="cv-entry-location">Buffalo, New York</span>
+          </div>
+          <div class="cv-entry-body">
+            <h3 class="cv-entry-degree">Teaching Assistant - CSE 331: Algorithms and Complexity</h3>
+            <div class="cv-entry-org">Dept. of Computer Science, University at Buffalo</div>
+            <ul class="cv-entry-courses">
+              <li>Conducted weekly office hours and recitations supporting students in algorithms and mathematical proof techniques.</li>
+              <li>Organized review sessions for 20+ students focused on proof-writing and problem-solving strategies.</li>
+              <li>Evaluated and provided detailed feedback on assignments and exams for 200+ students.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-aside">
+            <span class="cv-entry-date">Jan 2025 - May 2025</span>
+            <span class="cv-entry-location">Buffalo, New York</span>
+          </div>
+          <div class="cv-entry-body">
+            <h3 class="cv-entry-degree">Teaching Assistant - CSE 241: Digital Systems</h3>
+            <div class="cv-entry-org">Dept. of Computer Science, University at Buffalo</div>
+            <ul class="cv-entry-courses">
+              <li>Facilitated weekly lab sessions and open-hour support for 20+ students in digital circuit design and implementation.</li>
+              <li>Maintained lab equipment to ensure a seamless learning environment.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-aside">
+            <span class="cv-entry-date">May 2024 - Dec 2024</span>
+            <span class="cv-entry-location">Buffalo, New York</span>
+          </div>
+          <div class="cv-entry-body">
+            <h3 class="cv-entry-degree">Teaching Assistant - CSE 341: Computer Organization</h3>
+            <div class="cv-entry-org">Dept. of Computer Science, University at Buffalo</div>
+            <ul class="cv-entry-courses">
+              <li>Prepared practice problems and key documents using LaTeX.</li>
+              <li>Led weekly recitation sections of 30+ students covering computer hardware concepts and homework problems.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-aside">
+            <span class="cv-entry-date">May 2024 - Dec 2024</span>
+            <span class="cv-entry-location">Buffalo, New York</span>
+          </div>
+          <div class="cv-entry-body">
+            <h3 class="cv-entry-degree">Mathematics Grader</h3>
+            <div class="cv-entry-org">Dept. of Mathematics, University at Buffalo</div>
+            <ul class="cv-entry-courses">
+              <li>Cooperated with multiple professors to grade 200+ Calculus exam papers.</li>
+              <li>Provided detailed feedback to aid student understanding of course materials.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-aside">
+            <span class="cv-entry-date">Apr 2023 - May 2024</span>
+            <span class="cv-entry-location">Buffalo, New York</span>
+          </div>
+          <div class="cv-entry-body">
+            <h3 class="cv-entry-degree">Academic Tutor</h3>
+            <div class="cv-entry-org">Tutoring and Academic Support Services, University at Buffalo</div>
+            <ul class="cv-entry-courses">
+              <li>Assisted 40+ students in solving homework problems and improving study skills.</li>
+              <li>Hosted one-on-one sessions for Intro to CS, Calculus, and Linear Algebra.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Technical Skills ──────────────────────── -->
+      <section class="cv-section">
+        <h2 class="cv-section-title">Technical Skills</h2>
+        <table class="cv-table cv-skills-table">
+          <tbody>
+            <tr>
+              <th>Languages</th>
+              <td>Python, Java, C/C++, Kotlin, Verilog, MIPS/ARM Assembly, JavaScript, HTML/CSS</td>
+            </tr>
+            <tr>
+              <th>Technologies</th>
+              <td>Jupyter Notebook, VSCode, Git, IntelliJ, Android Studio</td>
+            </tr>
+            <tr>
+              <th>Libraries</th>
+              <td>NumPy, Pandas, Matplotlib, FEniCSx/DOLFINx, SKLearn, PySpark, SageMath, OpenCV</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    &copy; Copyright <span id="yr"></span> Tien Tran.
+    Powered by <a href="https://pages.github.com/" target="_blank" rel="noreferrer">GitHub Pages</a>.
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Publications</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .pub-item { margin-bottom: 1.5rem; }
+    .pub-title { font-weight: 600; font-size: 1rem; }
+    .pub-authors { font-style: italic; color: var(--muted); font-size: 0.9rem; }
+    .pub-venue { font-family: var(--mono); font-size: 0.8rem; margin-top: 0.2rem; }
+    .pub-links { margin-top: 0.3rem; }
+    .pub-links a { font-size: 0.8rem; margin-right: 1rem; }
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+    <a href="../index.html" class="nav-brand">Tien Tran</a>
+    <div class="nav-toggle" onclick="toggleNav()"><span></span><span></span><span></span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html" class="active">Publications</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="#" class="dropdown-toggle">more</a><ul class="dropdown-menu"><li><a href="/blog/">Blog</a></li><li><a href="/menu/">Menu</a></li><li><a href="/others/">Others</a></li></ul></li>
+    </ul>
+    <div class="nav-search" title="Search (ctrl+k)"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span>ctrl k</span></div>
+  </nav>
+
+  <main>
+    <div style="max-width: 800px; margin: 0 auto;">
+      <h1 style="font-size: 2rem; margin-bottom: 1rem;">Publications & Preprints</h1>
+
+      <p style="margin-top: 2rem; color: var(--muted);">* One day, I shall have my name on a paper...</p>
+    </div>
+  </main>
+
+  <footer>&copy; Copyright <span id="yr"></span> Tien Tran. Powered by GitHub Pages.</footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
