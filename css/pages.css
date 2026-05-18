@@ -291,13 +291,13 @@
 .cv-entry-date {
   font-family: var(--font);
   font-size: 0.82rem;
-  color: var(--muted);
+  color: #2faffa;
 }
 
 .cv-entry-location {
   font-family: var(--font);
   font-size: 0.78rem;
-  color: var(--muted);
+  color: #2faffa;
   opacity: 0.75;
 }
 
